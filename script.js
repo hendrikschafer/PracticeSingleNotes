@@ -1,7 +1,7 @@
 var randomimagesrc = "notes/a2.png";
 
 function GetNewImage() {
-  var imagearray = new Array("notes/a2.png", "notes/a3.png", "notes/a4.png", "notes/c3.png", "notes/c4.png", "notes/d3.png", "notes/d4.png", "notes/e3.png", "notes/e4.png", "notes/f3.png", "notes/f4.png", "notes/g3.png", "notes/h2.png", "notes/h3.png");
+  var imagearray = new Array("notes/a2.png", "notes/a3.png", "notes/c3.png", "notes/c4.png", "notes/d3.png", "notes/d4.png", "notes/e3.png", "notes/e4.png", "notes/f3.png", "notes/f4.png", "notes/g3.png", "notes/g4.png", "notes/h2.png", "notes/h3.png");
   randomimagesrc = imagearray[Math.floor(Math.random()*imagearray.length)]; // choose random image
 
   document.getElementById("img1").src = randomimagesrc; // set image to element
