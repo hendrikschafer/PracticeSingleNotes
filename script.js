@@ -13,10 +13,14 @@ function GetResult() {
   var answer = randomimagesrc.slice(6,-4)
 
   if (input.toLowerCase() === answer) {
-    p.textContent = "Congrats, " + answer + " is correct!";
+    p.textContent = "Correct!";
+    p.style.color = 'green';
+    p.style.fontSize = 'xx-large';
   }
   else {
-    p.textContent = "Wrong, " + answer + " is correct!";
+    p.textContent = "Wrong, " + answer + " is the right answer!";
+    p.style.color = 'red';
+    p.style.fontSize = 'xx-large';
   }
   document.getElementById('imagetxt').value = "";
 }
